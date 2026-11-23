@@ -642,8 +642,14 @@
           <!-- 3D Controls Bar -->
           <div class="mt-5 px-2 flex flex-wrap items-center justify-between gap-4">
             <div class="flex flex-wrap items-center gap-2">
-              <button id="modeHumanBtn" type="button" class="px-4 py-1.5 rounded-[9999px] body-sm bg-[#1d1d1f] text-[#ffffff] transition-colors">
+              <button id="modeHumanBtn" type="button" class="px-4 py-1.5 rounded-[9999px] body-sm bg-[#f5f5f7] text-[#1d1d1f] hover:bg-[#e8e8ed] transition-colors">
                 3D 立體人偶
+              </button>
+              <button id="modeBoyfriendBtn" type="button" class="px-4 py-1.5 rounded-[9999px] body-sm bg-[#1d1d1f] text-[#ffffff] transition-colors">
+                3D 男朋友 (Alex)
+              </button>
+              <button id="modeCoupleBtn" type="button" class="px-4 py-1.5 rounded-[9999px] body-sm bg-[#f5f5f7] text-[#1d1d1f] hover:bg-[#e8e8ed] transition-colors">
+                3D 情侶合照
               </button>
               <button id="modePortraitHumanBtn" type="button" class="px-4 py-1.5 rounded-[9999px] body-sm bg-[#f5f5f7] text-[#1d1d1f] hover:bg-[#e8e8ed] transition-colors">
                 真人頭像人偶
@@ -795,6 +801,7 @@
             <button type="button" data-quick-chat="你平時有咩興趣同鍾意食咩？" class="px-3.5 py-1.5 rounded-[9999px] bg-[#ffffff] hover:bg-[#e8e8ed] caption-text text-[#1d1d1f] transition-colors">興趣與美食</button>
             <button type="button" data-quick-chat="同我講句加油鼓勵嘅說話！" class="px-3.5 py-1.5 rounded-[9999px] bg-[#ffffff] hover:bg-[#e8e8ed] caption-text text-[#1d1d1f] transition-colors">求鼓勵打氣</button>
             <button type="button" data-quick-chat="可唔可以向我揮下手？" class="px-3.5 py-1.5 rounded-[9999px] bg-[#ffffff] hover:bg-[#e8e8ed] caption-text text-[#1d1d1f] transition-colors">向我揮手</button>
+            <button type="button" data-quick-chat="講下你男朋友林子軒啦！" class="px-3.5 py-1.5 rounded-[9999px] bg-[#ffffff] hover:bg-[#e8e8ed] caption-text text-[#1d1d1f] transition-colors">講下男朋友 💕</button>
             <button type="button" data-quick-chat="Hi! Tell me a fun fact or joke!" class="px-3.5 py-1.5 rounded-[9999px] bg-[#ffffff] hover:bg-[#e8e8ed] caption-text text-[#1d1d1f] transition-colors">Chat in English</button>
           </div>
 
@@ -824,6 +831,46 @@
         </div>
 
         <div id="profileCardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"></div>
+
+        <!-- Couple Spotlight Card (Blush Pastel + Pure White Split) -->
+        <div class="reveal-on-scroll mt-8 sm:mt-10 rounded-[28px] overflow-hidden bg-[#ffffff] grid grid-cols-1 lg:grid-cols-12">
+          <div class="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between gap-6" style="background-color: #e8d0d0;">
+            <div>
+              <p class="caption-text font-semibold text-[#b64400]">Couple Spotlight · 另一半</p>
+              <h3 class="font-display text-[32px] sm:text-[40px] leading-[1.1] tracking-[-0.2px] text-[#1d1d1f] mt-2">
+                林子軒 (Alex)
+              </h3>
+              <p class="body-sm text-[#474747] mt-2">
+                INFJ · 溫柔護花使者、專職攝影師與排隊專家
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3.5 py-1 rounded-[9999px] bg-[#ffffff]/85 caption-text text-[#1d1d1f]">最佳攝影師</span>
+              <span class="px-3.5 py-1 rounded-[9999px] bg-[#ffffff]/85 caption-text text-[#1d1d1f]">微甜走冰記憶庫</span>
+              <span class="px-3.5 py-1 rounded-[9999px] bg-[#ffffff]/85 caption-text text-[#1d1d1f]">隨傳隨到</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 p-8 sm:p-10 flex flex-col justify-between gap-6">
+            <div class="space-y-4">
+              <p class="body-copy text-[#1d1d1f]">
+                陳浩文的暖心男朋友，性格沉穩細心，和浩文的開朗活潑剛好互補。平時最擅長幫浩文找最靚打卡角度、記住她每一款最愛飲品的甜度冰量，亦是陪她行遍城市角落發掘拉麵與咖啡店的最佳拍檔。
+              </p>
+              <div class="rounded-[20px] bg-[#f5f5f7] px-6 py-4">
+                <div class="caption-text font-semibold text-[#707070]">男友代表金句</div>
+                <div class="body-copy font-semibold text-[#1d1d1f] mt-1">「你行前面影相，袋同飲品交俾我拎！」</div>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-5">
+              <button id="jumpToCouple3dBtn" type="button" class="btn-primary-pill !py-2.5 !px-5 !text-[15px]">
+                查看 3D 情侶合照
+              </button>
+              <a href="#aichat" class="text-link body-sm">
+                問浩文 AI 關於佢 ›
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2076,6 +2123,236 @@
         };
       }
 
+
+      function buildBoyfriendFigure() {
+        const group = new THREE.Group();
+
+        const skinMat = new THREE.MeshStandardMaterial({ color: 0xf1c7a8, roughness: 0.55, metalness: 0.02 });
+        const hairMat = new THREE.MeshStandardMaterial({ color: 0x221f1f, roughness: 0.65, metalness: 0.08 });
+        const shirtMat = new THREE.MeshStandardMaterial({ color: 0x5b84b1, roughness: 0.52, metalness: 0.05 });
+        const collarMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.45, metalness: 0.04 });
+        const pantsMat = new THREE.MeshStandardMaterial({ color: 0x2e3642, roughness: 0.72, metalness: 0.05 });
+        const shoeMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.4, metalness: 0.05 });
+        const soleMat = new THREE.MeshStandardMaterial({ color: 0xd2d2d7, roughness: 0.6, metalness: 0.05 });
+        const eyeMat = new THREE.MeshStandardMaterial({ color: 0x1d1d1f, roughness: 0.15, metalness: 0.2 });
+        const highlightMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
+        const heartMat = new THREE.MeshStandardMaterial({ color: 0xe63946, roughness: 0.28, metalness: 0.12 });
+
+        const bodyGroup = new THREE.Group();
+        group.add(bodyGroup);
+
+        // Slightly taller build (y shifted up slightly)
+        [-0.22, 0.22].forEach((xPos) => {
+          const shoe = new THREE.Mesh(new THREE.BoxGeometry(0.25, 0.14, 0.44), shoeMat);
+          shoe.position.set(xPos, -1.62, 0.07);
+          bodyGroup.add(shoe);
+
+          const shoeToe = new THREE.Mesh(new THREE.SphereGeometry(0.125, 20, 16), shoeMat);
+          shoeToe.scale.set(1, 0.58, 1.15);
+          shoeToe.position.set(xPos, -1.62, 0.27);
+          bodyGroup.add(shoeToe);
+
+          const sole = new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.04, 0.46), soleMat);
+          sole.position.set(xPos, -1.69, 0.08);
+          bodyGroup.add(sole);
+
+          const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.13, 0.11, 0.92, 24), pantsMat);
+          leg.position.set(xPos, -1.12, 0);
+          bodyGroup.add(leg);
+        });
+
+        const hips = new THREE.Mesh(new THREE.CylinderGeometry(0.36, 0.34, 0.24, 32), pantsMat);
+        hips.position.y = -0.64;
+        bodyGroup.add(hips);
+
+        // Sky-Indigo casual overshirt over white tee
+        const torso = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.37, 0.98, 32), shirtMat);
+        torso.position.y = -0.06;
+        bodyGroup.add(torso);
+
+        const shoulderBar = new THREE.Mesh(new THREE.SphereGeometry(0.36, 28, 20), shirtMat);
+        shoulderBar.scale.set(1.26, 0.55, 0.92);
+        shoulderBar.position.y = 0.36;
+        bodyGroup.add(shoulderBar);
+
+        const collarRing = new THREE.Mesh(new THREE.TorusGeometry(0.18, 0.05, 16, 32), collarMat);
+        collarRing.rotation.x = Math.PI / 2;
+        collarRing.position.set(0, 0.44, 0.01);
+        bodyGroup.add(collarRing);
+
+        // White inner tee stripe & signature mini camera prop (專職攝影師!)
+        const innerTee = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.72, 0.05), collarMat);
+        innerTee.position.set(0, 0.02, 0.345);
+        bodyGroup.add(innerTee);
+
+        const camDarkMat = new THREE.MeshStandardMaterial({ color: 0x1d1d1f, roughness: 0.35, metalness: 0.45 });
+        const camSilverMat = new THREE.MeshStandardMaterial({ color: 0xd6d6dc, roughness: 0.25, metalness: 0.75 });
+        const camGroup = new THREE.Group();
+        const camBody = new THREE.Mesh(new THREE.BoxGeometry(0.24, 0.16, 0.10), camDarkMat);
+        const camTop = new THREE.Mesh(new THREE.BoxGeometry(0.24, 0.04, 0.102), camSilverMat);
+        camTop.position.y = 0.07;
+        const camLens = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.058, 0.08, 24), camDarkMat);
+        camLens.rotation.x = Math.PI / 2;
+        camLens.position.set(0, -0.005, 0.07);
+        const camRing = new THREE.Mesh(new THREE.TorusGeometry(0.055, 0.008, 12, 24), camSilverMat);
+        camRing.position.set(0, -0.005, 0.11);
+        camGroup.add(camBody, camTop, camLens, camRing);
+        camGroup.position.set(0.02, -0.04, 0.39);
+        camGroup.rotation.z = -0.08;
+        bodyGroup.add(camGroup);
+
+        // Left Arm (gently reaching toward Chan Ho Man / waving)
+        const leftArmPivot = new THREE.Group();
+        leftArmPivot.position.set(-0.46, 0.34, 0);
+        const lSleeve = new THREE.Mesh(new THREE.CylinderGeometry(0.115, 0.125, 0.32, 20), shirtMat);
+        lSleeve.position.set(-0.04, -0.14, 0);
+        lSleeve.rotation.z = -0.18;
+        leftArmPivot.add(lSleeve);
+        const lForearm = new THREE.Mesh(new THREE.CylinderGeometry(0.085, 0.075, 0.58, 20), skinMat);
+        lForearm.position.set(-0.10, -0.50, 0.02);
+        lForearm.rotation.z = -0.10;
+        leftArmPivot.add(lForearm);
+        const lHand = new THREE.Mesh(new THREE.SphereGeometry(0.095, 20, 16), skinMat);
+        lHand.position.set(-0.12, -0.82, 0.03);
+        leftArmPivot.add(lHand);
+        bodyGroup.add(leftArmPivot);
+
+        // Right Arm (waving hello!)
+        const rightArmPivot = new THREE.Group();
+        rightArmPivot.position.set(0.46, 0.34, 0);
+        const rSleeve = new THREE.Mesh(new THREE.CylinderGeometry(0.115, 0.125, 0.32, 20), shirtMat);
+        rSleeve.position.set(0.10, 0.02, 0.02);
+        rSleeve.rotation.z = -1.10;
+        rightArmPivot.add(rSleeve);
+        const rUpper = new THREE.Mesh(new THREE.CylinderGeometry(0.085, 0.078, 0.42, 20), skinMat);
+        rUpper.position.set(0.28, 0.14, 0.06);
+        rUpper.rotation.z = -0.92;
+        rightArmPivot.add(rUpper);
+        const rForearmPivot = new THREE.Group();
+        rForearmPivot.position.set(0.44, 0.26, 0.08);
+        const rForearm = new THREE.Mesh(new THREE.CylinderGeometry(0.078, 0.07, 0.38, 20), skinMat);
+        rForearm.position.set(0.02, 0.18, 0.02);
+        rForearmPivot.add(rForearm);
+        const rHand = new THREE.Mesh(new THREE.SphereGeometry(0.098, 20, 16), skinMat);
+        rHand.scale.set(1.05, 1.15, 0.72);
+        rHand.position.set(0.02, 0.40, 0.03);
+        rForearmPivot.add(rHand);
+        rightArmPivot.add(rForearmPivot);
+        bodyGroup.add(rightArmPivot);
+
+        // Neck & Head
+        const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.115, 0.125, 0.24, 24), skinMat);
+        neck.position.y = 0.54;
+        bodyGroup.add(neck);
+
+        const headGroup = new THREE.Group();
+        headGroup.position.y = 1.00;
+        bodyGroup.add(headGroup);
+
+        const headSphere = new THREE.Mesh(new THREE.SphereGeometry(0.46, 40, 32), skinMat);
+        headSphere.scale.set(1.0, 1.05, 0.96);
+        headGroup.add(headSphere);
+
+        [-0.44, 0.44].forEach((ex) => {
+          const ear = new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 16), skinMat);
+          ear.scale.set(0.6, 1.0, 0.85);
+          ear.position.set(ex, -0.02, -0.02);
+          headGroup.add(ear);
+        });
+
+        // Short layered hair
+        const hairTop = new THREE.Mesh(new THREE.SphereGeometry(0.485, 36, 28, 0, Math.PI * 2, 0, Math.PI * 0.58), hairMat);
+        hairTop.position.set(0, 0.05, -0.03);
+        hairTop.rotation.x = -0.18;
+        headGroup.add(hairTop);
+
+        const hairQuiff = new THREE.Mesh(new THREE.SphereGeometry(0.28, 24, 18), hairMat);
+        hairQuiff.scale.set(1.35, 0.55, 0.65);
+        hairQuiff.position.set(-0.04, 0.34, 0.26);
+        hairQuiff.rotation.z = 0.14;
+        headGroup.add(hairQuiff);
+
+        // Friendly eyes & warm smile
+        [-0.155, 0.155].forEach((ex) => {
+          const eye = new THREE.Mesh(new THREE.SphereGeometry(0.05, 20, 20), eyeMat);
+          eye.position.set(ex, 0.04, 0.42);
+          headGroup.add(eye);
+          const catchlight = new THREE.Mesh(new THREE.SphereGeometry(0.017, 12, 12), highlightMat);
+          catchlight.position.set(ex + 0.017, 0.058, 0.462);
+          headGroup.add(catchlight);
+        });
+
+        const nose = new THREE.Mesh(new THREE.SphereGeometry(0.036, 16, 16), skinMat);
+        nose.position.set(0, -0.03, 0.452);
+        headGroup.add(nose);
+
+        const smile = new THREE.Mesh(
+          new THREE.TorusGeometry(0.10, 0.019, 12, 28, Math.PI * 0.78),
+          new THREE.MeshStandardMaterial({ color: 0xa64b4b, roughness: 0.4 })
+        );
+        smile.rotation.z = Math.PI * 1.11;
+        smile.position.set(0, -0.10, 0.415);
+        headGroup.add(smile);
+
+        // Floating sculpted 3D Heart (sits between the couple)
+        const heartGroup = new THREE.Group();
+        const hLeft = new THREE.Mesh(new THREE.SphereGeometry(0.14, 20, 20), heartMat);
+        hLeft.position.set(-0.09, 0.06, 0);
+        const hRight = new THREE.Mesh(new THREE.SphereGeometry(0.14, 20, 20), heartMat);
+        hRight.position.set(0.09, 0.06, 0);
+        const hTip = new THREE.Mesh(new THREE.ConeGeometry(0.21, 0.28, 24), heartMat);
+        hTip.rotation.z = Math.PI;
+        hTip.position.set(0, -0.11, 0);
+        heartGroup.add(hLeft, hRight, hTip);
+        heartGroup.position.set(-0.68, 1.52, 0.15);
+        group.add(heartGroup);
+
+        // Solo pedestal for standalone 3D boyfriend view
+        const soloPedGroup = new THREE.Group();
+        const soloPed = new THREE.Mesh(
+          new THREE.CylinderGeometry(1.02, 1.12, 0.14, 64),
+          new THREE.MeshStandardMaterial({ color: 0xe8e8ed, roughness: 0.35, metalness: 0.25 })
+        );
+        soloPed.position.y = -1.78;
+        const soloPedRing = new THREE.Mesh(
+          new THREE.TorusGeometry(1.03, 0.015, 16, 64),
+          new THREE.MeshStandardMaterial({ color: 0x0071e3, roughness: 0.3, metalness: 0.3, transparent: true, opacity: 0.7 })
+        );
+        soloPedRing.rotation.x = Math.PI / 2;
+        soloPedRing.position.y = -1.71;
+        soloPedGroup.add(soloPed, soloPedRing);
+        group.add(soloPedGroup);
+
+        // Double wide couple pedestal
+        const couplePedGroup = new THREE.Group();
+        const couplePed = new THREE.Mesh(
+          new THREE.CylinderGeometry(1.55, 1.66, 0.14, 64),
+          new THREE.MeshStandardMaterial({ color: 0xe8e8ed, roughness: 0.35, metalness: 0.25 })
+        );
+        couplePed.position.set(-0.68, -1.78, 0);
+        const couplePedRing = new THREE.Mesh(
+          new THREE.TorusGeometry(1.56, 0.016, 16, 64),
+          new THREE.MeshStandardMaterial({ color: 0x0071e3, roughness: 0.3, metalness: 0.3, transparent: true, opacity: 0.65 })
+        );
+        couplePedRing.rotation.x = Math.PI / 2;
+        couplePedRing.position.set(-0.68, -1.71, 0);
+        couplePedGroup.add(couplePed, couplePedRing);
+        couplePedGroup.visible = false;
+        group.add(couplePedGroup);
+
+        return {
+          group,
+          bodyGroup,
+          headGroup,
+          leftArmPivot,
+          rForearmPivot,
+          heartGroup,
+          soloPedGroup,
+          couplePedGroup,
+          mats: { shirtMat, pantsMat, shoeMat }
+        };
+      }
+
       function initThreeVitrine() {
         const stage = document.getElementById('threeStage');
         const canvas = document.getElementById('threeCanvas');
@@ -2141,6 +2418,12 @@
         // Mode 1 & 2: Full 3D Human Figure
         const humanRig = buildHumanFigure(frontMat);
         rootGroup.add(humanRig.group);
+
+        // Boyfriend 3D Figure (shown beside Chan Ho Man in 'couple' mode)
+        const boyfriendRig = buildBoyfriendFigure();
+        boyfriendRig.group.position.x = 0.68;
+        boyfriendRig.group.visible = false;
+        rootGroup.add(boyfriendRig.group);
 
         // Mode 3: 3D Monolith Card
         const monolithGroup = new THREE.Group();
@@ -2210,6 +2493,8 @@
         // Mode switching
         const modeBtns = {
           human: document.getElementById('modeHumanBtn'),
+          boyfriend: document.getElementById('modeBoyfriendBtn'),
+          couple: document.getElementById('modeCoupleBtn'),
           portraitHuman: document.getElementById('modePortraitHumanBtn'),
           monolith: document.getElementById('modeMonolithBtn'),
           cube: document.getElementById('modeCubeBtn')
@@ -2217,11 +2502,22 @@
 
         function setMode(mode) {
           threeState.mode = mode;
-          const isHuman = mode === 'human' || mode === 'portraitHuman';
+          const isCouple = mode === 'couple';
+          const isBoyfriend = mode === 'boyfriend';
+          const isHuman = mode === 'human' || mode === 'portraitHuman' || isCouple;
           humanRig.group.visible = isHuman;
-          humanRig.stylizedFace.visible = mode === 'human';
+          humanRig.group.position.x = isCouple ? -0.68 : 0;
+          humanRig.stylizedFace.visible = (mode === 'human' || isCouple);
           humanRig.portraitFaceDisc.visible = mode === 'portraitHuman';
           humanRig.portraitRim.visible = mode === 'portraitHuman';
+
+          boyfriendRig.group.visible = (isBoyfriend || isCouple);
+          boyfriendRig.group.position.x = isCouple ? 0.68 : 0;
+          boyfriendRig.soloPedGroup.visible = isBoyfriend;
+          boyfriendRig.couplePedGroup.visible = isCouple;
+          boyfriendRig.heartGroup.visible = isCouple;
+
+          camera.position.z = isCouple ? 7.2 : 6.1;
           monolithGroup.visible = mode === 'monolith';
           cubeGroup.visible = mode === 'cube';
 
@@ -2235,13 +2531,36 @@
         }
 
         modeBtns.human.addEventListener('click', () => setMode('human'));
+        modeBtns.boyfriend.addEventListener('click', () => {
+          setMode('boyfriend');
+          threeState.waveBoost = 0.85;
+          recordActivity('旋轉 3D 人偶', '檢視 3D 男朋友林子軒模型');
+        });
+        modeBtns.couple.addEventListener('click', () => {
+          setMode('couple');
+          threeState.waveBoost = 0.85;
+          recordActivity('旋轉 3D 人偶', '切換至 3D 情侶合照模式');
+        });
         modeBtns.portraitHuman.addEventListener('click', () => setMode('portraitHuman'));
         modeBtns.monolith.addEventListener('click', () => setMode('monolith'));
         modeBtns.cube.addEventListener('click', () => setMode('cube'));
 
+        // Start in solo 3D Boyfriend mode so the newly requested model is visible right away
+        setMode('boyfriend');
+
+        const jumpCoupleBtn = document.getElementById('jumpToCouple3dBtn');
+        if (jumpCoupleBtn) {
+          jumpCoupleBtn.addEventListener('click', () => {
+            setMode('couple');
+            threeState.waveBoost = 1.0;
+            const el = document.getElementById('showcase3d');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          });
+        }
+
         // Wave hello action
         document.getElementById('wave3dBtn').addEventListener('click', () => {
-          if (threeState.mode !== 'human' && threeState.mode !== 'portraitHuman') {
+          if (threeState.mode !== 'human' && threeState.mode !== 'portraitHuman' && threeState.mode !== 'couple' && threeState.mode !== 'boyfriend') {
             setMode('human');
           }
           threeState.waveBoost = 1.0;
@@ -2276,8 +2595,7 @@
         threeState.currentOutfitName = '經典紅 Polo';
 
         function applyTopColor(topHex, collarHex) {
-          humanRig.mats.poloRedMat.color.set(topHex);
-          humanRig.mats.poloDarkRedMat.color.set(collarHex || topHex);
+          if (threeState.mode === 'boyfriend') { boyfriendRig.mats.shirtMat.color.set(topHex); } else { humanRig.mats.poloRedMat.color.set(topHex); humanRig.mats.poloDarkRedMat.color.set(collarHex || topHex); }
           document.querySelectorAll('#topColorSwatches button').forEach((b) => {
             const match = b.getAttribute('data-top-color') === topHex;
             b.classList.toggle('ring-2', match);
@@ -2287,7 +2605,7 @@
         }
 
         function applyBottomColor(bottomHex) {
-          humanRig.mats.pantsMat.color.set(bottomHex);
+          if (threeState.mode === 'boyfriend') { boyfriendRig.mats.pantsMat.color.set(bottomHex); } else { humanRig.mats.pantsMat.color.set(bottomHex); }
           document.querySelectorAll('#bottomColorSwatches button').forEach((b) => {
             const match = b.getAttribute('data-bottom-color') === bottomHex;
             b.classList.toggle('ring-2', match);
@@ -2329,7 +2647,7 @@
         }
 
         function celebrateOutfitChange(labelText) {
-          if (threeState.mode !== 'human' && threeState.mode !== 'portraitHuman') {
+          if (threeState.mode !== 'human' && threeState.mode !== 'portraitHuman' && threeState.mode !== 'couple' && threeState.mode !== 'boyfriend') {
             setMode('human');
           }
           threeState.currentOutfitName = labelText;
@@ -2429,6 +2747,14 @@
           const waveAmp = 0.18 + threeState.waveBoost * 0.38;
           humanRig.rForearmPivot.rotation.z = Math.sin(t * waveSpeed) * waveAmp;
 
+          if (boyfriendRig.group.visible) {
+            boyfriendRig.bodyGroup.position.y = Math.sin(t * 2.0 + 0.6) * 0.025 + hop;
+            boyfriendRig.headGroup.rotation.z = Math.sin(t * 1.4 + 0.5) * 0.04;
+            boyfriendRig.rForearmPivot.rotation.z = Math.sin(t * waveSpeed + 0.4) * waveAmp;
+            boyfriendRig.heartGroup.position.y = 1.52 + Math.sin(t * 2.8) * 0.09;
+            boyfriendRig.heartGroup.rotation.y = t * 1.2;
+          }
+
           // Floating motion for monolith & cube
           monolithGroup.position.y = Math.sin(t * 1.4) * 0.08;
           cubeGroup.position.y = Math.sin(t * 1.4) * 0.08;
@@ -2509,6 +2835,13 @@
         const triggerWave = () => {
           threeState.waveBoost = 1.0;
         };
+
+        if (/(boyfriend|bf|partner|lover|couple|男朋友|男友|另一半|拍拖|情侶|林子軒|alex)/i.test(raw)) {
+          triggerWave();
+          return isEnglish
+            ? `Hehe, you mean Alex (林子軒)? He's the sweetest—always remembers my matcha latte order, takes the best photos for me, and stands right beside me in the 3D Couple mode above!`
+            : `哈哈，你講林子軒（Alex）呀？佢平時好細心㗎，每次都會幫我搵最靚打卡角度，仲記得我飲抹茶拿鐵要微甜走冰～你可以去上面「3D 情侶合照」睇我哋兩個一齊揮手呀！`;
+        }
 
         if (/(outfit|clothes|wear|dress|換衫|著咩|穿搭|衫|造型|眼鏡)/i.test(raw)) {
           triggerWave();
